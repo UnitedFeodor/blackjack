@@ -1,4 +1,4 @@
-package enums;
+package cards.enums;
 
 public enum Rank {
     ACE("Ace", 11),

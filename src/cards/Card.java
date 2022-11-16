@@ -1,11 +1,16 @@
 package cards;
 
-import enums.Rank;
-import enums.Suit;
+import cards.enums.Rank;
+import cards.enums.Suit;
 
 public class Card {
     private Suit suit;
     private Rank rank;
+
+    public Card(Card card){
+        this.suit = card.getSuit();
+        this.rank = card.getRank();
+    }
 
     public Suit getSuit() {
         return suit;
